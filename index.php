@@ -231,7 +231,7 @@ include('layouts/header.php'); ?>
                 <div class="col-12 col-xl-8 mxd-niche-cards__column animate-card-2">
                   <div class="container-fluid p-0">
                     <div class="row g-0">
-                      <div class="col-12 mxd-grid-item">
+                      <div class="col-12 mxd-grid-item niche-card-top">
                         <div class="mxd-niche-cards__item">
                           <div class="mxd-niche-cards__inner fixed-height-desktop space-between-desktop">
                             <div class="mxd-niche-cards__title">
@@ -258,7 +258,7 @@ include('layouts/header.php'); ?>
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-xl-6 mxd-grid-item animate-card-2">
+                      <div class="col-12 col-xl-6 mxd-grid-item animate-card-2 niche-card-bottom">
                         <div class="mxd-niche-cards__item">
                           <div class="mxd-niche-cards__inner permanent fixed-height-desktop space-between-desktop">
                             <div class="mxd-niche-cards__title">
@@ -284,7 +284,7 @@ include('layouts/header.php'); ?>
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-xl-6 mxd-grid-item animate-card-2">
+                      <div class="col-12 col-xl-6 mxd-grid-item animate-card-2 niche-card-right">
                         <div class="mxd-niche-cards__item">
                           <div class="mxd-niche-cards__inner fixed-height-desktop space-between-desktop">
                             <div class="mxd-niche-cards__title">
