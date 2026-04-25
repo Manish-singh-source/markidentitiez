@@ -108,7 +108,7 @@ include('layouts/header.php'); ?>
           <div class="mxd-section-title">
             <div class="container-fluid p-0">
               <div class="row g-0">
-                <div class="col-12 col-xl-4 mxd-grid-item">
+                <div class="col-12 col-xl-4 mxd-grid-item stats-left-col">
                   <div class="mxd-section-title__data top-number">
                     <div class="mxd-section-title__number pre-manifest anim-uni-in-up">
                       <!-- <span class="title-number mxd-scramble">A/01</span> -->
@@ -118,7 +118,7 @@ include('layouts/header.php'); ?>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-xl-8 mxd-grid-item">
+                <div class="col-12 col-xl-8 mxd-grid-item stats-right-col">
 
                   <!-- Manifest Start -->
                   <div class="mxd-section-title__manifest title-manifest-s no-padding-mobile">
@@ -137,7 +137,7 @@ include('layouts/header.php'); ?>
                       <div class="mxd-stats-lines__divider divider-top"></div>
                       <div class="mxd-stats-lines__inner mxd-stats-lines__anim">
                         <div class="mxd-stats-lines__number">
-                          <p id="stats-counter-1">50+</p>
+                          <p id="stats-counter-1" data-target="50">50+</p>
                         </div>
                         <div class="mxd-stats-lines__caption">
                           <p>Projects delivered successfully</p>
@@ -149,7 +149,7 @@ include('layouts/header.php'); ?>
                       <div class="mxd-stats-lines__divider divider-top"></div>
                       <div class="mxd-stats-lines__inner mxd-stats-lines__anim">
                         <div class="mxd-stats-lines__number">
-                          <p id="stats-counter-2">30+</p>
+                          <p id="stats-counter-2" data-target="30">30+</p>
                         </div>
                         <div class="mxd-stats-lines__caption">
                           <p>Happy clients worldwide</p>
@@ -161,7 +161,7 @@ include('layouts/header.php'); ?>
                       <div class="mxd-stats-lines__divider divider-top"></div>
                       <div class="mxd-stats-lines__inner mxd-stats-lines__anim">
                         <div class="mxd-stats-lines__number">
-                          <p id="stats-counter-3">15+</p>
+                          <p id="stats-counter-3" data-target="15">15+</p>
                         </div>
                         <div class="mxd-stats-lines__caption">
                           <p>Years of industry experience</p>
@@ -173,7 +173,7 @@ include('layouts/header.php'); ?>
                       <div class="mxd-stats-lines__divider divider-top"></div>
                       <div class="mxd-stats-lines__inner mxd-stats-lines__anim">
                         <div class="mxd-stats-lines__number">
-                          <p id="stats-counter-4">85%</p>
+                          <p id="stats-counter-4" data-target="85">85%</p>
                         </div>
                         <div class="mxd-stats-lines__caption">
                           <p>Clients come back for a new projects</p>
