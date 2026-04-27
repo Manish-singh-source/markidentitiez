@@ -50,3 +50,226 @@
 h1.medium {
     font-size: 10rem;
 }
+
+/* Why Choose Us Section */
+.benefit-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: clamp(72px, 8vw, 110px) 20px;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(139, 215, 13, 0.18), transparent 30%),
+    radial-gradient(circle at 88% 72%, rgba(37, 78, 88, 0.16), transparent 34%),
+    #eeeae8;
+  font-family: "Inter", sans-serif;
+}
+
+.benefit-section::before {
+  content: "";
+  position: absolute;
+  inset: 26px;
+  border: 1px solid rgba(15, 15, 15, 0.08);
+  border-radius: 28px;
+  pointer-events: none;
+}
+
+.benefit-container {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.benefit-container h2 {
+  max-width: 760px;
+  margin: 0 auto 12px;
+  color: #101412;
+  font-size: clamp(34px, 5vw, 70px);
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+.subtitle {
+  max-width: 540px;
+  margin: 0 auto clamp(44px, 5vw, 76px);
+  color: rgba(16, 20, 18, 0.64);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.benefit-layout {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 220px minmax(250px, 1fr);
+  grid-template-rows: repeat(3, minmax(112px, auto));
+  align-items: center;
+  gap: 30px clamp(42px, 5vw, 74px);
+}
+
+.center-box {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(139, 215, 13, 0.96), rgba(37, 78, 88, 0.98));
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0;
+  box-shadow: 0 30px 70px rgba(37, 78, 88, 0.28);
+  isolation: isolate;
+}
+
+.center-box::before {
+  content: "";
+  position: absolute;
+  inset: -13px;
+  z-index: -1;
+  border: 1px solid rgba(37, 78, 88, 0.16);
+  border-radius: 31px;
+}
+
+.center-box::after {
+  content: "";
+  position: absolute;
+  inset: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 17px;
+}
+
+.benefit-card {
+  position: relative;
+  width: 100%;
+  min-height: 112px;
+  padding: 28px 24px 24px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(16, 20, 18, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(16, 20, 18, 0.08);
+  backdrop-filter: blur(16px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.benefit-card:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(139, 215, 13, 0.58);
+  box-shadow: 0 24px 58px rgba(16, 20, 18, 0.13);
+}
+
+.benefit-card span {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: #101412;
+  color: #8bd70d;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.benefit-card p {
+  margin: 0;
+  color: rgba(16, 20, 18, 0.68);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.card-1,
+.card-3,
+.card-5 {
+  grid-column: 1;
+}
+
+.card-2,
+.card-4,
+.card-6 {
+  grid-column: 3;
+}
+
+.card-1,
+.card-2 {
+  grid-row: 1;
+}
+
+.card-3,
+.card-4 {
+  grid-row: 2;
+}
+
+.card-5,
+.card-6 {
+  grid-row: 3;
+}
+
+.card-1::after,
+.card-3::after,
+.card-5::after,
+.card-2::after,
+.card-4::after,
+.card-6::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: clamp(28px, 4vw, 58px);
+  height: 1px;
+  background: linear-gradient(90deg, rgba(37, 78, 88, 0), rgba(37, 78, 88, 0.34));
+}
+
+.card-1::after,
+.card-3::after,
+.card-5::after {
+  right: calc(clamp(28px, 4vw, 58px) * -1);
+}
+
+.card-2::after,
+.card-4::after,
+.card-6::after {
+  left: calc(clamp(28px, 4vw, 58px) * -1);
+  transform: rotate(180deg);
+}
+
+@media (max-width: 991px) {
+  .benefit-section {
+    min-height: auto;
+    padding: 72px 18px;
+  }
+
+  .benefit-section::before {
+    inset: 14px;
+    border-radius: 18px;
+  }
+
+  .benefit-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .center-box {
+    order: -1;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 14px;
+    font-size: 21px;
+  }
+
+  .benefit-card {
+    max-width: 520px;
+  }
+
+  .benefit-card::after {
+    display: none;
+  }
+}

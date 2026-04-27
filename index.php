@@ -322,11 +322,53 @@ include('layouts/header.php'); ?>
     </div>
     <!-- Section - Niche Cards End -->
 
+        <section class="benefit-section">
+      <div class="benefit-container">
+        <h2>Why Brands Choose Us</h2>
+        <p class="subtitle">Strategy, identity, and execution aligned to make your brand easier to remember and harder to ignore.</p>
+
+        <div class="benefit-layout">
+          <div class="benefit-card left card-1">
+            <span>Brand Clarity</span>
+            <p>We shape your positioning, voice, and visual direction before the design work begins.</p>
+          </div>
+
+          <div class="benefit-card right card-2">
+            <span>Distinct Identity</span>
+            <p>Logos, colors, typography, and systems designed to feel ownable across every touchpoint.</p>
+          </div>
+
+          <div class="benefit-card left card-3">
+            <span>Market Fit</span>
+            <p>Creative decisions are guided by your audience, category, and growth goals.</p>
+          </div>
+
+          <div class="center-box">
+            Branding
+          </div>
+
+          <div class="benefit-card right card-4">
+            <span>Digital Ready</span>
+            <p>Your brand assets are built to work smoothly on websites, social media, and campaigns.</p>
+          </div>
+
+          <div class="benefit-card left card-5">
+            <span>Consistent System</span>
+            <p>Guidelines and reusable design rules keep your brand polished as it scales.</p>
+          </div>
+
+          <div class="benefit-card right card-6">
+            <span>Launch Support</span>
+            <p>We help translate the identity into practical assets your team can use immediately.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Section - About Mission & Large Title Start -->
-    <div id="about" class="mxd-section blur-section pinned-section bg-color-opposite padding-top-subtitle-mobile">
+    <!-- <div id="about" class="mxd-section blur-section pinned-section bg-color-opposite padding-top-subtitle-mobile">
       <div class="mxd-container grid-l-container">
 
-        <!-- Block - Section Title v07 Start -->
         <div class="mxd-block">
           <div class="mxd-section-title">
             <div class="container-fluid p-0">
@@ -356,9 +398,8 @@ include('layouts/header.php'); ?>
             </div>
           </div>
         </div>
-        <!-- Block - Section Title v07 End -->
       </div>
-    </div>
+    </div> -->
     <!-- Section - About Mission & Large Title End -->
 
     <!-- Section - Inner Headline v01 Start -->

@@ -76,7 +76,7 @@
 <body>
 
   <!-- Loader Start -->
-  <div class="mxd-page-transition"></div>
+  <!-- <div class="mxd-page-transition"></div>
   <div class="mxd-loader">
     <div class="mxd-loader__top">
       <span>Mark Identitiez</span>
@@ -97,7 +97,7 @@
       </div>
       <span class="mxd-loader__caption">Loading</span>
     </div>
-  </div>
+  </div> -->
   <!-- Loader End -->
 
   <!-- Menu Hamburger Start -->
