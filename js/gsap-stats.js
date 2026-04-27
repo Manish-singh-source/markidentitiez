@@ -55,7 +55,9 @@ window.addEventListener("load", function () {
     const cardTop = nicheSection.querySelector(".niche-card-top");
     const cardRight = nicheSection.querySelector(".niche-card-right");
     const cardBottom = nicheSection.querySelector(".niche-card-bottom");
-    const nicheCards = [cardLeft, cardTop, cardRight, cardBottom].filter(Boolean);
+    const nicheCards = [cardLeft, cardTop, cardRight, cardBottom].filter(
+      Boolean,
+    );
     const animatedNicheCards = nicheSection.querySelectorAll(".animate-card-2");
 
     if (nicheCards.length === 4) {
@@ -103,93 +105,6 @@ window.addEventListener("load", function () {
   }
 
   // ===== BENEFIT SECTION =====
-  const benefitSection = document.querySelector(".benefit-section");
-
-  if (benefitSection) {
-    const benefitTitle = benefitSection.querySelector("h2");
-    const benefitSubtitle = benefitSection.querySelector(".subtitle");
-    const centerBox = benefitSection.querySelector(".center-box");
-    const benefitCards = [1, 2, 3, 4, 5, 6]
-      .map(function (number) {
-        return benefitSection.querySelector(".card-" + number);
-      })
-      .filter(Boolean);
-    const benefitIntro = [benefitTitle, benefitSubtitle].filter(Boolean);
-
-    if (benefitTitle && centerBox && benefitCards.length) {
-      gsap.set([benefitIntro, centerBox, benefitCards], {
-        autoAlpha: 0,
-      });
-      gsap.set(benefitTitle, { y: 46 });
-      if (benefitSubtitle) {
-        gsap.set(benefitSubtitle, { y: 24 });
-      }
-      gsap.set(centerBox, { y: 34, scale: 0.82, rotate: -4 });
-      gsap.set(benefitCards, {
-        y: 32,
-        scale: 0.96,
-      });
-
-      benefitCards.forEach(function (card) {
-        const isLeftCard = card.classList.contains("left");
-        gsap.set(card, { x: isLeftCard ? -76 : 76 });
-      });
-
-      const benefitTL = gsap.timeline({
-        defaults: {
-          ease: "power3.out",
-          overwrite: "auto",
-        },
-        scrollTrigger: {
-          trigger: benefitSection,
-          start: "top 68%",
-          end: "bottom 25%",
-          toggleActions: "play reverse play reverse",
-        },
-      });
-
-      benefitTL
-        .to(benefitTitle, {
-          autoAlpha: 1,
-          y: 0,
-          duration: 0.85,
-        });
-
-      if (benefitSubtitle) {
-        benefitTL.to(
-          benefitSubtitle,
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.7,
-          },
-          "-=0.42",
-        );
-      }
-
-      benefitTL
-        .to(centerBox, {
-          autoAlpha: 1,
-          y: 0,
-          scale: 1,
-          rotate: 0,
-          duration: 0.82,
-          ease: "back.out(1.45)",
-        })
-        .to(
-          benefitCards,
-          {
-            autoAlpha: 1,
-            x: 0,
-            y: 0,
-            scale: 1,
-            duration: 0.72,
-            stagger: {
-              each: 0.18,
-            },
-          },
-          "+=0.12",
-        );
-    }
-  }
+  
+  
 });
