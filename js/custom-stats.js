@@ -72,328 +72,328 @@ window.addEventListener("load", function () {
     observer.observe(statsSection);
   }
 
-  // Section - Project Start
-  const destinations = [
-    {
-      location: "Switzerland Alps",
-      title: "SAINT\nANTÖNIEN",
-      desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
-      cardLocation: "Switzerland Alps",
-      cardTitle: "SAINT\nANTÖNIEN",
-      img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=85&auto=format",
-      cardImg:
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
-    },
-    {
-      location: "Japan Alps",
-      title: "NAGANO\nPREFECTURE",
-      desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
-      cardLocation: "Japan Alps",
-      cardTitle: "NAGANO\nPREFECTURE",
-      img: "https://images.unsplash.com/photo-1548199569-6bfb28e4e9d5?w=1600&q=85&auto=format",
-      cardImg:
-        "https://images.unsplash.com/photo-1548199569-6bfb28e4e9d5?w=600&q=80",
-    },
-    {
-      location: "Sahara Desert — Morocco",
-      title: "MARRAKECH\nMERZOUGA",
-      desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
-      cardLocation: "Sahara Desert — Morocco",
-      cardTitle: "MARRAKECH\nMERZOUGA",
-      img: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1600&q=85&auto=format",
-      cardImg:
-        "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600&q=80",
-    },
-    {
-      location: "Sierra Nevada — United States",
-      title: "YOSEMITE\nNATIONAL PARK",
-      desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
-      cardLocation: "Sierra Nevada — United States",
-      cardTitle: "YOSEMITE\nNATIONAL PARK",
-      img: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=1600&q=85&auto=format",
-      cardImg:
-        "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&q=80",
-    },
-    {
-      location: "Tarifa — Spain",
-      title: "LOS LANCES\nBEACH",
-      desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
-      cardLocation: "Tarifa — Spain",
-      cardTitle: "LOS LANCES\nBEACH",
-      img: "https://images.unsplash.com/photo-1502933691298-84fc14542831?w=1600&q=85&auto=format",
-      cardImg:
-        "https://images.unsplash.com/photo-1502933691298-84fc14542831?w=600&q=80",
-    },
-    {
-      location: "Cappadocia — Turkey",
-      title: "GÖREME\nVALLEY",
-      desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
-      cardLocation: "Cappadocia — Turkey",
-      cardTitle: "GÖREME\nVALLEY",
-      img: "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=1600&q=85&auto=format",
-      cardImg:
-        "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=600&q=80",
-    },
-  ];
+  // // Section - Project Start
+  // const destinations = [
+  //   {
+  //     location: "Switzerland Alps",
+  //     title: "SAINT\nANTÖNIEN",
+  //     desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
+  //     cardLocation: "Switzerland Alps",
+  //     cardTitle: "SAINT\nANTÖNIEN",
+  //     img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=85&auto=format",
+  //     cardImg:
+  //       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
+  //   },
+  //   {
+  //     location: "Japan Alps",
+  //     title: "NAGANO\nPREFECTURE",
+  //     desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
+  //     cardLocation: "Japan Alps",
+  //     cardTitle: "NAGANO\nPREFECTURE",
+  //     img: "https://images.unsplash.com/photo-1548199569-6bfb28e4e9d5?w=1600&q=85&auto=format",
+  //     cardImg:
+  //       "https://images.unsplash.com/photo-1548199569-6bfb28e4e9d5?w=600&q=80",
+  //   },
+  //   {
+  //     location: "Sahara Desert — Morocco",
+  //     title: "MARRAKECH\nMERZOUGA",
+  //     desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
+  //     cardLocation: "Sahara Desert — Morocco",
+  //     cardTitle: "MARRAKECH\nMERZOUGA",
+  //     img: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1600&q=85&auto=format",
+  //     cardImg:
+  //       "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600&q=80",
+  //   },
+  //   {
+  //     location: "Sierra Nevada — United States",
+  //     title: "YOSEMITE\nNATIONAL PARK",
+  //     desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
+  //     cardLocation: "Sierra Nevada — United States",
+  //     cardTitle: "YOSEMITE\nNATIONAL PARK",
+  //     img: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=1600&q=85&auto=format",
+  //     cardImg:
+  //       "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&q=80",
+  //   },
+  //   {
+  //     location: "Tarifa — Spain",
+  //     title: "LOS LANCES\nBEACH",
+  //     desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
+  //     cardLocation: "Tarifa — Spain",
+  //     cardTitle: "LOS LANCES\nBEACH",
+  //     img: "https://images.unsplash.com/photo-1502933691298-84fc14542831?w=1600&q=85&auto=format",
+  //     cardImg:
+  //       "https://images.unsplash.com/photo-1502933691298-84fc14542831?w=600&q=80",
+  //   },
+  //   {
+  //     location: "Cappadocia — Turkey",
+  //     title: "GÖREME\nVALLEY",
+  //     desc: "Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero.",
+  //     cardLocation: "Cappadocia — Turkey",
+  //     cardTitle: "GÖREME\nVALLEY",
+  //     img: "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=1600&q=85&auto=format",
+  //     cardImg:
+  //       "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=600&q=80",
+  //   },
+  // ];
 
-  const N = destinations.length;
-  let current = 0;
-  let animating = false;
+  // const N = destinations.length;
+  // let current = 0;
+  // let animating = false;
 
-  const hero = document.getElementById("hero");
-  const bgSlides = document.getElementById("bg-slides");
-  const topBar = document.getElementById("top-bar");
-  const leftPanel = document.getElementById("left-panel");
-  const locName = document.getElementById("loc-name");
-  const slideTitle = document.getElementById("slide-title");
-  const slideDesc = document.getElementById("slide-desc");
-  const cardsTrack = document.getElementById("cards-track");
-  const progressFill = document.getElementById("progress-fill");
-  const slideCounter = document.getElementById("slide-counter");
-  const expander = document.getElementById("card-expander");
+  // const hero = document.getElementById("hero");
+  // const bgSlides = document.getElementById("bg-slides");
+  // const topBar = document.getElementById("top-bar");
+  // const leftPanel = document.getElementById("left-panel");
+  // const locName = document.getElementById("loc-name");
+  // const slideTitle = document.getElementById("slide-title");
+  // const slideDesc = document.getElementById("slide-desc");
+  // const cardsTrack = document.getElementById("cards-track");
+  // const progressFill = document.getElementById("progress-fill");
+  // const slideCounter = document.getElementById("slide-counter");
+  // const expander = document.getElementById("card-expander");
 
-  // ─── BUILD BACKGROUNDS ───
-  destinations.forEach((d, i) => {
-    const div = document.createElement("div");
-    div.className = "bg-slide" + (i === 0 ? " active" : "");
-    div.style.backgroundImage = `url('${d.img}')`;
-    bgSlides.appendChild(div);
-  });
+  // // ─── BUILD BACKGROUNDS ───
+  // destinations.forEach((d, i) => {
+  //   const div = document.createElement("div");
+  //   div.className = "bg-slide" + (i === 0 ? " active" : "");
+  //   div.style.backgroundImage = `url('${d.img}')`;
+  //   bgSlides.appendChild(div);
+  // });
 
-  // ─── BUILD CARDS (circular: show current+next 5) ───
-  // We render all cards in order; track offset handles the looping
-  function buildCards() {
-    cardsTrack.innerHTML = "";
-    destinations.forEach((d, i) => {
-      const card = document.createElement("div");
-      card.className = "dest-card" + (i === 0 ? " card-active" : "");
-      card.dataset.idx = i;
-      card.innerHTML = `
-      <div class="card-img-wrap" style="background-image:url('${d.cardImg}')"></div>
-      <div class="card-grad"></div>
-      <div class="card-info">
-        <div class="card-dash"></div>
-        <div class="card-location">${d.cardLocation}</div>
-        <div class="card-title">${d.cardTitle.replace("\n", "<br>")}</div>
-      </div>
-    `;
-      card.addEventListener("click", () => {
-        if (i !== current) goTo(i);
-      });
-      cardsTrack.appendChild(card);
-    });
-  }
+  // // ─── BUILD CARDS (circular: show current+next 5) ───
+  // // We render all cards in order; track offset handles the looping
+  // function buildCards() {
+  //   cardsTrack.innerHTML = "";
+  //   destinations.forEach((d, i) => {
+  //     const card = document.createElement("div");
+  //     card.className = "dest-card" + (i === 0 ? " card-active" : "");
+  //     card.dataset.idx = i;
+  //     card.innerHTML = `
+  //     <div class="card-img-wrap" style="background-image:url('${d.cardImg}')"></div>
+  //     <div class="card-grad"></div>
+  //     <div class="card-info">
+  //       <div class="card-dash"></div>
+  //       <div class="card-location">${d.cardLocation}</div>
+  //       <div class="card-title">${d.cardTitle.replace("\n", "<br>")}</div>
+  //     </div>
+  //   `;
+  //     card.addEventListener("click", () => {
+  //       if (i !== current) goTo(i);
+  //     });
+  //     cardsTrack.appendChild(card);
+  //   });
+  // }
 
-  function getCardWidth() {
-    const card = cardsTrack.children[0];
-    if (!card) return 160;
-    const style = getComputedStyle(card);
-    return card.offsetWidth + parseInt(getComputedStyle(cardsTrack).gap || 16);
-  }
+  // function getCardWidth() {
+  //   const card = cardsTrack.children[0];
+  //   if (!card) return 160;
+  //   const style = getComputedStyle(card);
+  //   return card.offsetWidth + parseInt(getComputedStyle(cardsTrack).gap || 16);
+  // }
 
-  function updateCardsPosition(idx, animate = true) {
-    if (!animate) cardsTrack.style.transition = "none";
-    else
-      cardsTrack.style.transition = "transform 0.75s cubic-bezier(0.4,0,0.2,1)";
-    const cw = getCardWidth();
-    cardsTrack.style.transform = `translateX(${-idx * cw}px)`;
-    // Force reflow when no animation
-    if (!animate) void cardsTrack.offsetWidth;
-  }
+  // function updateCardsPosition(idx, animate = true) {
+  //   if (!animate) cardsTrack.style.transition = "none";
+  //   else
+  //     cardsTrack.style.transition = "transform 0.75s cubic-bezier(0.4,0,0.2,1)";
+  //   const cw = getCardWidth();
+  //   cardsTrack.style.transform = `translateX(${-idx * cw}px)`;
+  //   // Force reflow when no animation
+  //   if (!animate) void cardsTrack.offsetWidth;
+  // }
 
-  function updateActiveCard(idx) {
-    document.querySelectorAll(".dest-card").forEach((c, i) => {
-      c.classList.toggle("card-active", i === idx);
-    });
-  }
+  // function updateActiveCard(idx) {
+  //   document.querySelectorAll(".dest-card").forEach((c, i) => {
+  //     c.classList.toggle("card-active", i === idx);
+  //   });
+  // }
 
-  function updateUI(idx, animate) {
-    const d = destinations[idx];
-    // top bar
-    topBar.style.transform = "scaleX(1)";
-    // progress bar
-    progressFill.style.width = ((idx + 1) / N) * 100 + "%";
-    // counter
-    slideCounter.textContent = String(idx + 1).padStart(2, "0");
+  // function updateUI(idx, animate) {
+  //   const d = destinations[idx];
+  //   // top bar
+  //   topBar.style.transform = "scaleX(1)";
+  //   // progress bar
+  //   progressFill.style.width = ((idx + 1) / N) * 100 + "%";
+  //   // counter
+  //   slideCounter.textContent = String(idx + 1).padStart(2, "0");
 
-    if (animate) {
-      leftPanel.classList.add("fade-out");
-      setTimeout(() => {
-        locName.textContent = d.location;
-        slideTitle.innerHTML = d.title.replace("\n", "<br>");
-        slideDesc.textContent = d.desc;
-        leftPanel.classList.remove("fade-out");
-      }, 320);
-    } else {
-      locName.textContent = d.location;
-      slideTitle.innerHTML = d.title.replace("\n", "<br>");
-      slideDesc.textContent = d.desc;
-    }
-  }
+  //   if (animate) {
+  //     leftPanel.classList.add("fade-out");
+  //     setTimeout(() => {
+  //       locName.textContent = d.location;
+  //       slideTitle.innerHTML = d.title.replace("\n", "<br>");
+  //       slideDesc.textContent = d.desc;
+  //       leftPanel.classList.remove("fade-out");
+  //     }, 320);
+  //   } else {
+  //     locName.textContent = d.location;
+  //     slideTitle.innerHTML = d.title.replace("\n", "<br>");
+  //     slideDesc.textContent = d.desc;
+  //   }
+  // }
 
-  function switchBackground(idx) {
-    const slides = bgSlides.querySelectorAll(".bg-slide");
-    slides.forEach((s, i) => s.classList.toggle("active", i === idx));
-  }
+  // function switchBackground(idx) {
+  //   const slides = bgSlides.querySelectorAll(".bg-slide");
+  //   slides.forEach((s, i) => s.classList.toggle("active", i === idx));
+  // }
 
-  // ─── CARD → FULLSCREEN EXPAND ANIMATION ───
-  async function goTo(nextIdx) {
-    if (animating) return;
-    if (nextIdx < 0 || nextIdx >= N) return;
-    if (nextIdx === current) return;
-    animating = true;
+  // // ─── CARD → FULLSCREEN EXPAND ANIMATION ───
+  // async function goTo(nextIdx) {
+  //   if (animating) return;
+  //   if (nextIdx < 0 || nextIdx >= N) return;
+  //   if (nextIdx === current) return;
+  //   animating = true;
 
-    const targetCard = cardsTrack.children[nextIdx];
-    const cardRect = targetCard.getBoundingClientRect();
-    const heroRect = hero.getBoundingClientRect();
+  //   const targetCard = cardsTrack.children[nextIdx];
+  //   const cardRect = targetCard.getBoundingClientRect();
+  //   const heroRect = hero.getBoundingClientRect();
 
-    const relL = cardRect.left - heroRect.left;
-    const relT = cardRect.top - heroRect.top;
-    const relW = cardRect.width;
-    const relH = cardRect.height;
-    const borderR = getComputedStyle(targetCard).borderRadius;
+  //   const relL = cardRect.left - heroRect.left;
+  //   const relT = cardRect.top - heroRect.top;
+  //   const relW = cardRect.width;
+  //   const relH = cardRect.height;
+  //   const borderR = getComputedStyle(targetCard).borderRadius;
 
-    // Setup expander at card's exact position
-    expander.style.cssText = `
-    position: absolute;
-    left: ${relL}px;
-    top: ${relT}px;
-    width: ${relW}px;
-    height: ${relH}px;
-    border-radius: ${borderR};
-    background-image: url('${destinations[nextIdx].img}');
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
-    z-index: 8;
-    pointer-events: none;
-    transition: none;
-  `;
-    void expander.offsetWidth; // force reflow
+  //   // Setup expander at card's exact position
+  //   expander.style.cssText = `
+  //   position: absolute;
+  //   left: ${relL}px;
+  //   top: ${relT}px;
+  //   width: ${relW}px;
+  //   height: ${relH}px;
+  //   border-radius: ${borderR};
+  //   background-image: url('${destinations[nextIdx].img}');
+  //   background-size: cover;
+  //   background-position: center;
+  //   opacity: 1;
+  //   z-index: 8;
+  //   pointer-events: none;
+  //   transition: none;
+  // `;
+  //   void expander.offsetWidth; // force reflow
 
-    // Animate expander to full screen
-    expander.style.transition =
-      "left 0.85s cubic-bezier(0.4,0,0.2,1), " +
-      "top 0.85s cubic-bezier(0.4,0,0.2,1), " +
-      "width 0.85s cubic-bezier(0.4,0,0.2,1), " +
-      "height 0.85s cubic-bezier(0.4,0,0.2,1), " +
-      "border-radius 0.85s cubic-bezier(0.4,0,0.2,1), " +
-      "opacity 0.2s ease 0.75s";
+  //   // Animate expander to full screen
+  //   expander.style.transition =
+  //     "left 0.85s cubic-bezier(0.4,0,0.2,1), " +
+  //     "top 0.85s cubic-bezier(0.4,0,0.2,1), " +
+  //     "width 0.85s cubic-bezier(0.4,0,0.2,1), " +
+  //     "height 0.85s cubic-bezier(0.4,0,0.2,1), " +
+  //     "border-radius 0.85s cubic-bezier(0.4,0,0.2,1), " +
+  //     "opacity 0.2s ease 0.75s";
 
-    expander.style.left = "0px";
-    expander.style.top = "0px";
-    expander.style.width = heroRect.width + "px";
-    expander.style.height = heroRect.height + "px";
-    expander.style.borderRadius = "0px";
+  //   expander.style.left = "0px";
+  //   expander.style.top = "0px";
+  //   expander.style.width = heroRect.width + "px";
+  //   expander.style.height = heroRect.height + "px";
+  //   expander.style.borderRadius = "0px";
 
-    // Dim left panel
-    leftPanel.style.opacity = "0.08";
+  //   // Dim left panel
+  //   leftPanel.style.opacity = "0.08";
 
-    // Halfway through → switch background + content
-    await delay(480);
-    switchBackground(nextIdx);
-    current = nextIdx;
-    updateCardsPosition(current, true);
-    updateActiveCard(current);
-    updateUI(current, false);
-    leftPanel.style.opacity = "";
+  //   // Halfway through → switch background + content
+  //   await delay(480);
+  //   switchBackground(nextIdx);
+  //   current = nextIdx;
+  //   updateCardsPosition(current, true);
+  //   updateActiveCard(current);
+  //   updateUI(current, false);
+  //   leftPanel.style.opacity = "";
 
-    // Wait for expand to finish then fade out expander
-    await delay(400);
-    expander.style.opacity = "0";
+  //   // Wait for expand to finish then fade out expander
+  //   await delay(400);
+  //   expander.style.opacity = "0";
 
-    await delay(220);
-    // Reset expander
-    expander.style.cssText =
-      "position:absolute;z-index:8;pointer-events:none;opacity:0;";
+  //   await delay(220);
+  //   // Reset expander
+  //   expander.style.cssText =
+  //     "position:absolute;z-index:8;pointer-events:none;opacity:0;";
 
-    animating = false;
-  }
+  //   animating = false;
+  // }
 
-  function delay(ms) {
-    return new Promise((r) => setTimeout(r, ms));
-  }
+  // function delay(ms) {
+  //   return new Promise((r) => setTimeout(r, ms));
+  // }
 
-  // ─── ARROW BUTTONS ───
-  document.getElementById("btn-next").addEventListener("click", () => {
-    if (current < N - 1) goTo(current + 1);
-  });
-  document.getElementById("btn-prev").addEventListener("click", () => {
-    if (current > 0) goTo(current - 1);
-  });
+  // // ─── ARROW BUTTONS ───
+  // document.getElementById("btn-next").addEventListener("click", () => {
+  //   if (current < N - 1) goTo(current + 1);
+  // });
+  // document.getElementById("btn-prev").addEventListener("click", () => {
+  //   if (current > 0) goTo(current - 1);
+  // });
 
-  // ─── MOUSE WHEEL ───
-  let wheelTimer = null;
-  hero.addEventListener(
-    "wheel",
-    (e) => {
-      e.preventDefault();
-      if (animating) return;
-      if (wheelTimer) return;
-      wheelTimer = setTimeout(() => {
-        wheelTimer = null;
-      }, 950);
-      if (e.deltaY > 0) {
-        if (current < N - 1) goTo(current + 1);
-      } else {
-        if (current > 0) goTo(current - 1);
-      }
-    },
-    { passive: false },
-  );
+  // // ─── MOUSE WHEEL ───
+  // let wheelTimer = null;
+  // hero.addEventListener(
+  //   "wheel",
+  //   (e) => {
+  //     e.preventDefault();
+  //     if (animating) return;
+  //     if (wheelTimer) return;
+  //     wheelTimer = setTimeout(() => {
+  //       wheelTimer = null;
+  //     }, 950);
+  //     if (e.deltaY > 0) {
+  //       if (current < N - 1) goTo(current + 1);
+  //     } else {
+  //       if (current > 0) goTo(current - 1);
+  //     }
+  //   },
+  //   { passive: false },
+  // );
 
-  // ─── TOUCH SWIPE ───
-  let touchStartX = null,
-    touchStartY = null;
-  hero.addEventListener(
-    "touchstart",
-    (e) => {
-      touchStartX = e.touches[0].clientX;
-      touchStartY = e.touches[0].clientY;
-    },
-    { passive: true },
-  );
+  // // ─── TOUCH SWIPE ───
+  // let touchStartX = null,
+  //   touchStartY = null;
+  // hero.addEventListener(
+  //   "touchstart",
+  //   (e) => {
+  //     touchStartX = e.touches[0].clientX;
+  //     touchStartY = e.touches[0].clientY;
+  //   },
+  //   { passive: true },
+  // );
 
-  hero.addEventListener(
-    "touchend",
-    (e) => {
-      if (touchStartX === null) return;
-      const dx = touchStartX - e.changedTouches[0].clientX;
-      const dy = touchStartY - e.changedTouches[0].clientY;
-      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 45) {
-        if (dx > 0) {
-          if (current < N - 1) goTo(current + 1);
-        } else {
-          if (current > 0) goTo(current - 1);
-        }
-      }
-      touchStartX = touchStartY = null;
-    },
-    { passive: true },
-  );
+  // hero.addEventListener(
+  //   "touchend",
+  //   (e) => {
+  //     if (touchStartX === null) return;
+  //     const dx = touchStartX - e.changedTouches[0].clientX;
+  //     const dy = touchStartY - e.changedTouches[0].clientY;
+  //     if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 45) {
+  //       if (dx > 0) {
+  //         if (current < N - 1) goTo(current + 1);
+  //       } else {
+  //         if (current > 0) goTo(current - 1);
+  //       }
+  //     }
+  //     touchStartX = touchStartY = null;
+  //   },
+  //   { passive: true },
+  // );
 
-  // ─── KEYBOARD ───
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowRight" || e.key === "ArrowDown") {
-      if (current < N - 1) goTo(current + 1);
-    }
-    if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
-      if (current > 0) goTo(current - 1);
-    }
-  });
+  // // ─── KEYBOARD ───
+  // document.addEventListener("keydown", (e) => {
+  //   if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+  //     if (current < N - 1) goTo(current + 1);
+  //   }
+  //   if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+  //     if (current > 0) goTo(current - 1);
+  //   }
+  // });
 
-  // ─── INIT ───
-  buildCards();
-  updateUI(0, false);
-  updateCardsPosition(0, false);
-  progressFill.style.width = (1 / N) * 100 + "%";
-  topBar.style.transform = "scaleX(1)";
-  topBar.style.transition = "none";
+  // // ─── INIT ───
+  // buildCards();
+  // updateUI(0, false);
+  // updateCardsPosition(0, false);
+  // progressFill.style.width = (1 / N) * 100 + "%";
+  // topBar.style.transform = "scaleX(1)";
+  // topBar.style.transition = "none";
 
-  // Animate top bar on load
-  setTimeout(() => {
-    topBar.style.transition = "transform 0.9s cubic-bezier(0.4,0,0.2,1)";
-  }, 100);
+  // // Animate top bar on load
+  // setTimeout(() => {
+  //   topBar.style.transition = "transform 0.9s cubic-bezier(0.4,0,0.2,1)";
+  // }, 100);
 
   // Section - Project End
 

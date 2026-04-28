@@ -425,18 +425,14 @@ include('layouts/header.php'); ?>
 <!-- Section - Project Slider End  -->
 
 <!-- Section - Project Start -->
-<div id="hero">
+<!-- <div id="hero">
 
-  <!-- Gold accent bar top -->
   <div id="top-bar"></div>
 
-  <!-- Background slides -->
   <div id="bg-slides"></div>
 
-  <!-- Overlay -->
   <div id="overlay"></div>
 
-  <!-- Main content -->
   <div id="content-area">
     <div id="left-panel">
       <div class="location-line">
@@ -456,12 +452,10 @@ include('layouts/header.php'); ?>
     </div>
   </div>
 
-  <!-- Cards -->
   <div id="cards-area">
     <div id="cards-track"></div>
   </div>
 
-  <!-- Bottom bar: arrows + progress + counter -->
   <div id="bottom-bar">
     <div class="arrow-btns">
       <button class="arrow-btn" id="btn-prev" aria-label="Previous">
@@ -481,23 +475,20 @@ include('layouts/header.php'); ?>
     <div id="slide-counter">01</div>
   </div>
 
-  <!-- Expanding card clone -->
   <div id="card-expander"></div>
 
-</div>
+</div> -->
 <!-- Section - Project End -->
 
 <!-- Section - Inner Headline v01 Start -->
-<div class="mxd-section blur-section">
+<!-- <div class="mxd-section blur-section">
   <div class="mxd-container grid-l-container">
 
-    <!-- Block - Inner Headline v02 Start -->
     <div class="mxd-block loading-wrap">
       <div class="inner-headline margin-bottom-title-medium">
         <div class="container-fluid p-0">
           <div class="row g-0">
             <div class="col-12">
-              <!-- content -->
               <div class="inner-headline__content has-medium-title">
                 <div class="container-fluid p-0">
                   <div class="row g-0">
@@ -505,9 +496,6 @@ include('layouts/header.php'); ?>
                       <div class="inner-headline__title">
                         <h1 class="medium loading-split">Where bold ideas <span>take shape</span></h1>
                       </div>
-                      <!-- <div class="inner-headline__subtitle">
-                              <p>Creative solutions <span>made simple</span></p>
-                            </div> -->
                     </div>
                     <div class="col-12 col-xl-3 mxd-grid-item">
                       <div class="inner-headline__tags align-end-desktop tags-medium-title">
@@ -527,17 +515,15 @@ include('layouts/header.php'); ?>
         </div>
       </div>
     </div>
-    <!-- Block - Inner Headline v02 End -->
 
   </div>
-</div>
+</div> -->
 <!-- Section - Inner Headline v01 End -->
 
 <!-- Section - Projects Grid Sticky Showcase Start -->
-<div class="mxd-section blur-section padding-bottom-projects">
+<!-- <div class="mxd-section blur-section padding-bottom-projects">
   <div class="mxd-container grid-l-container">
 
-    <!-- Block - Projects Grid Sticky Showcase Start -->
     <div class="mxd-block">
       <div class="mxd-projects-grid loading-fade">
         <div class="container-fluid p-0">
@@ -667,10 +653,9 @@ include('layouts/header.php'); ?>
         </div>
       </div>
     </div>
-    <!-- Block - Projects Grid Sticky Showcase End -->
 
   </div>
-</div>
+</div> -->
 <!-- Section - Projects Grid Sticky Showcase End -->
 
 <!-- Section - Parallax Divider Video Start -->
