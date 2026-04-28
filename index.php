@@ -322,6 +322,7 @@ include('layouts/header.php'); ?>
 </div>
 <!-- Section - Niche Cards End -->
 
+<!-- Why Choose Us section Start  -->
 <section class="benefit-section">
   <div class="benefit-container">
     <h2>Why Brands Choose Us</h2>
@@ -335,21 +336,9 @@ include('layouts/header.php'); ?>
         <p>We shape your positioning, voice, and visual direction before the design work begins.</p>
       </div>
 
-      <div class="benefit-card card-2">
-        <span>Distinct Identity</span>
-        <p>Logos, colors, typography & systems designed to feel ownable across every touchpoint.</p>
-      </div>
-
       <div class="benefit-card card-3">
         <span>Market Fit</span>
         <p>Creative decisions are guided by your audience, category, and growth goals.</p>
-      </div>
-
-      <div class="center-box">Branding</div>
-
-      <div class="benefit-card card-4">
-        <span>Digital Ready</span>
-        <p>Your brand assets are built to work smoothly on websites, social media, and campaigns.</p>
       </div>
 
       <div class="benefit-card card-5">
@@ -357,13 +346,29 @@ include('layouts/header.php'); ?>
         <p>Guidelines and reusable design rules keep your brand polished as it scales.</p>
       </div>
 
+      <div class="center-box">Branding</div>
+
       <div class="benefit-card card-6">
         <span>Launch Support</span>
         <p>We help translate the identity into practical assets your team can use immediately.</p>
       </div>
+
+      <div class="benefit-card card-4">
+        <span>Digital Ready</span>
+        <p>Your brand assets are built to work smoothly on websites, social media, and campaigns.</p>
+      </div>
+
+      <div class="benefit-card card-2">
+        <span>Distinct Identity</span>
+        <p>Logos, colors, typography & systems designed to feel ownable across every touchpoint.</p>
+      </div>
+
+      
     </div>
   </div>
 </section>
+<!-- Why Choose Us section End  -->
+
 
 <!-- Section - About Mission & Large Title Start -->
 <!-- <div id="about" class="mxd-section blur-section pinned-section bg-color-opposite padding-top-subtitle-mobile">

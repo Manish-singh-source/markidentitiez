@@ -51,7 +51,7 @@ h1.medium {
   font-size: 10rem;
 }
 
-/* Why Choose Us Section */
+/* Why Choose Us section Start */
 * {
   box-sizing: border-box;
 }
@@ -372,6 +372,8 @@ h1.medium {
     display: none;
   }
 }
+
+/* Why Choose Us section End  */
 
 /* Section - Project Start  */
 /* ─── HERO WRAPPER ─── */

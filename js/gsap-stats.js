@@ -105,78 +105,159 @@ window.addEventListener("load", function () {
   }
 
   // ===== BENEFIT SECTION =====
+  // const benefitSection = document.querySelector(".benefit-section");
+
+  // if (benefitSection) {
+  //   const benefitCards = benefitSection.querySelectorAll(".benefit-card");
+  //   const benefitTitle = benefitSection.querySelector("h2");
+  //   const benefitSubtitle = benefitSection.querySelector(".subtitle");
+  //   const benefitCenterBox = benefitSection.querySelector(".center-box");
+
+  //   // Set initial state for reverse animation on scroll
+  //   gsap.set([benefitTitle, benefitSubtitle, benefitCenterBox, benefitCards], {
+  //     opacity: 0,
+  //     y: 24,
+  //   });
+
+  //   const benefitTL = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: benefitSection,
+  //       start: "top 80%",
+  //       end: "bottom 20%",
+  //       toggleActions: "play reverse play reverse",
+  //     },
+  //   });
+
+  //   benefitTL
+  //     .to(benefitTitle, {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 0.8,
+  //       ease: "power3.out",
+  //     }, 0)
+  //     .to(
+  //       benefitSubtitle,
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         duration: 0.8,
+  //         ease: "power3.out",
+  //       },
+  //       0.15,
+  //     )
+  //     .to(
+  //       benefitCenterBox,
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         duration: 0.8,
+  //         ease: "power3.out",
+  //       },
+  //       0.3,
+  //     )
+  //     .to(
+  //       benefitCards,
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         duration: 0.6,
+  //         ease: "power3.out",
+  //         stagger: 0.1,
+  //         onStart: function () {
+  //           benefitCards.forEach(function (card, i) {
+  //             setTimeout(function () {
+  //               card.classList.add("line-visible");
+  //             }, i * 100);
+  //           });
+  //         },
+  //         onReverseComplete: function () {
+  //           benefitCards.forEach(function (card) {
+  //             card.classList.remove("line-visible");
+  //           });
+  //         },
+  //       },
+  //       0.45,
+  //     );
+  // }
+
+
+
+
+
+
+
+
   const benefitSection = document.querySelector(".benefit-section");
 
-  if (benefitSection) {
-    const benefitCards = benefitSection.querySelectorAll(".benefit-card");
-    const benefitTitle = benefitSection.querySelector("h2");
-    const benefitSubtitle = benefitSection.querySelector(".subtitle");
-    const benefitCenterBox = benefitSection.querySelector(".center-box");
+if (benefitSection) {
+  const benefitCards = gsap.utils.toArray(
+    benefitSection.querySelectorAll(".benefit-card")
+  );
 
-    // Set initial state for reverse animation on scroll
-    gsap.set([benefitTitle, benefitSubtitle, benefitCenterBox, benefitCards], {
-      opacity: 0,
-      y: 24,
-    });
+  const benefitTitle = benefitSection.querySelector("h2");
+  const benefitSubtitle = benefitSection.querySelector(".subtitle");
+  const benefitCenterBox = benefitSection.querySelector(".center-box");
 
-    const benefitTL = gsap.timeline({
-      scrollTrigger: {
-        trigger: benefitSection,
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
+  gsap.set([benefitTitle, benefitSubtitle, benefitCenterBox, benefitCards], {
+    opacity: 0,
+    y: 24,
+  });
 
-    benefitTL
-      .to(benefitTitle, {
+  const benefitTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: benefitSection,
+      start: "top 80%",
+      end: "bottom 20%",
+      toggleActions: "play reverse play reverse",
+    },
+  });
+
+  benefitTL
+    .to(benefitTitle, {
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      ease: "power3.out",
+    })
+    .to(
+      benefitSubtitle,
+      {
         opacity: 1,
         y: 0,
         duration: 0.8,
         ease: "power3.out",
-      }, 0)
-      .to(
-        benefitSubtitle,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: "power3.out",
+      },
+      "-=0.55"
+    )
+    .to(
+      benefitCenterBox,
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.8,
+        ease: "back.out(1.7)",
+      },
+      "-=0.45"
+    );
+
+  benefitCards.forEach((card, index) => {
+    benefitTL.to(
+      card,
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.55,
+        ease: "power3.out",
+        onStart: () => {
+          card.classList.add("line-visible");
         },
-        0.15,
-      )
-      .to(
-        benefitCenterBox,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: "power3.out",
+        onReverseComplete: () => {
+          card.classList.remove("line-visible");
         },
-        0.3,
-      )
-      .to(
-        benefitCards,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          ease: "power3.out",
-          stagger: 0.1,
-          onStart: function () {
-            benefitCards.forEach(function (card, i) {
-              setTimeout(function () {
-                card.classList.add("line-visible");
-              }, i * 100);
-            });
-          },
-          onReverseComplete: function () {
-            benefitCards.forEach(function (card) {
-              card.classList.remove("line-visible");
-            });
-          },
-        },
-        0.45,
-      );
-  }
+      },
+      index === 0 ? "-=0.15" : "+=0.08"
+    );
+  });
+}
 });
