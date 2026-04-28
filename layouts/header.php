@@ -121,7 +121,7 @@
 
         <!-- Menu Logo Start -->
         <div class="mxd-menu__logo">
-          <a href="index-branding-studio.html" class="menu-logo">
+          <a href="index.php" class="menu-logo">
             <!-- logo icon -->
             <!-- <svg class="menu-logo__image" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 42.4 36">
                 <path d="M25.8,13.8h2.8v5.5h-2.8v-5.5ZM13.8,16.6v2.8h2.8v-5.5h-2.8v2.8ZM32.2,0v2.8h-2.8V0h2.8ZM26.7,5.5h2.8v-2.8h-2.8v2.8ZM21.2,5.5h-5.5v2.8h11.1v-2.8h-5.5ZM12.8,2.8v2.8h2.8v-2.8h-2.8ZM10.1,0v2.8h2.8V0h-2.8ZM7.3,5.5v5.5h2.8V2.8h-2.8v2.8ZM4.5,13.8v2.8H0v2.8h2.8v2.8H0v2.8h2.8v11.1h2.8v-8.3h5.5v-2.8h-5.5v-8.3h1.9v-5.5h-2.9v2.8ZM35,5.5v-2.8h-2.8v8.3h2.8v-5.5ZM42.4,19.4v-2.8h-4.7v-5.5h-2.8v5.5h1.9v8.3h-5.5v2.8h5.5v8.3h2.8v-11.1h2.8v-2.8h-2.8v-2.8h2.8Z"/>
@@ -344,7 +344,7 @@
                 <div class="menu-contact__item">
                   <ul class="menu-contact__list">
                     <li>
-                      <a class="tag tag-m" href="https://goo.gl/maps/nWXKpGaDPuyH6gxRA" target="_blank">
+                      <a class="tag tag-m" href="https://maps.app.goo.gl/kLkGtQxroAiAh1TRA" target="_blank">
                         <span>Office No. 501, 5th Floor, Ghanshyam Enclave,
                           <br>Next To Laljipada Police Station, Laljipada,<br>Link Road, Kandivali (West), Mumbai -
                           400067. Maharashtra - India</span>
@@ -416,7 +416,7 @@
   <header id="header" class="mxd-header mxd-header-permanent">
     <!-- header logo -->
     <div class="mxd-header__logo loading-fade">
-      <a class="mxd-logo" href="index-branding-studio.html">
+      <a class="mxd-logo" href="index.php">
         <!-- logo icon -->
         <!-- <svg class="mxd-logo__image" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 42.4 36">
             <path d="M25.8,13.8h2.8v5.5h-2.8v-5.5ZM13.8,16.6v2.8h2.8v-5.5h-2.8v2.8ZM32.2,0v2.8h-2.8V0h2.8ZM26.7,5.5h2.8v-2.8h-2.8v2.8ZM21.2,5.5h-5.5v2.8h11.1v-2.8h-5.5ZM12.8,2.8v2.8h2.8v-2.8h-2.8ZM10.1,0v2.8h2.8V0h-2.8ZM7.3,5.5v5.5h2.8V2.8h-2.8v2.8ZM4.5,13.8v2.8H0v2.8h2.8v2.8H0v2.8h2.8v11.1h2.8v-8.3h5.5v-2.8h-5.5v-8.3h1.9v-5.5h-2.9v2.8ZM35,5.5v-2.8h-2.8v8.3h2.8v-5.5ZM42.4,19.4v-2.8h-4.7v-5.5h-2.8v5.5h1.9v8.3h-5.5v2.8h5.5v8.3h2.8v-11.1h2.8v-2.8h-2.8v-2.8h2.8Z"/>
@@ -442,8 +442,8 @@
         <!-- Phosphor icon -->
         <!-- <i class="ph-bold ph-arrow-up-right"></i> -->
       </a>
-      <button id="color-switcher" class="btn mxd-color-switcher permanent" type="button" role="switch"
-        aria-label="light/dark mode" aria-checked="true"></button>
+      <!-- <button id="color-switcher" class="btn mxd-color-switcher permanent" type="button" role="switch"
+        aria-label="light/dark mode" aria-checked="true"></button> -->
     </div>
   </header>
   <!-- Header End -->

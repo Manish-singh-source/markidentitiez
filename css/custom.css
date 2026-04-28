@@ -930,7 +930,7 @@ nav {
 
 .subtitle2 {
   max-width: 540px;
-  margin: 0 auto clamp(44px, 5vw, 76px);
+  margin: 0 auto clamp(44px, 5vw, 30px);
   color: rgba(255, 255, 255, 0.911);
   font-size: 16px;
   line-height: 1.55;

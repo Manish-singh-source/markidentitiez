@@ -412,12 +412,11 @@ include('layouts/header.php'); ?>
 
 <!-- Section - Project Slider Start  -->
 <section class="gallery-section">
-  <p class="kicker">Our Work</p>
-  <h1>My Visual Diary</h1>
-  <!-- <p class="subtitle2">
-    See the world through my lens:<br>
-    adventures in photos and videos
-  </p> -->
+  <!-- <p class="kicker">Our Work</p> -->
+  <h1>Crafting Distinct Brands</h1>
+  <p class="subtitle2">
+    Explore how we turn ideas into powerful brand <br> experiences — from strategy to execution.
+  </p>
 
   <div class="tabs-wrap">
     <div class="tabs" id="tabs"></div>
