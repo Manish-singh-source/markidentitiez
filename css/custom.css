@@ -373,6 +373,24 @@ h1.medium {
   }
 }
 
+.benefit-card {
+  padding: 26px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  box-shadow: 
+    8px 8px 20px rgba(0,0,0,0.08),
+    -6px -6px 20px rgba(255,255,255,0.9);
+  transition: all 0.4s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    14px 14px 30px rgba(0,0,0,0.12),
+    -8px -8px 30px rgba(255,255,255,1);
+}
+
+
 /* Why Choose Us section End  */
 
 /* Section - Project Start  */

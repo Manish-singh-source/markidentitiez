@@ -327,43 +327,46 @@ include('layouts/header.php'); ?>
   <div class="benefit-container">
     <h2>Why Brands Choose Us</h2>
     <p class="subtitle">
-      Strategy, identity, and execution aligned to make your brand easier to remember and harder to ignore.
+      Not just another branding agency — we combine experience, creativity, and strategy to build brands that stand out and perform.
     </p>
 
     <div class="benefit-layout">
+      
+      <!-- LEFT -->
       <div class="benefit-card card-1">
         <span>Brand Clarity</span>
-        <p>We shape your positioning, voice, and visual direction before the design work begins.</p>
+        <p>We define your positioning, voice, and direction so your brand communicates with purpose from day one.</p>
       </div>
 
       <div class="benefit-card card-3">
         <span>Market Fit</span>
-        <p>Creative decisions are guided by your audience, category, and growth goals.</p>
+        <p>Every decision is guided by your audience, industry, and growth goals to ensure real-world impact.</p>
       </div>
 
       <div class="benefit-card card-5">
         <span>Consistent System</span>
-        <p>Guidelines and reusable design rules keep your brand polished as it scales.</p>
+        <p>We create scalable design systems and guidelines that keep your brand consistent as it grows.</p>
       </div>
 
+      <!-- CENTER -->
       <div class="center-box">Branding</div>
 
+      <!-- RIGHT -->
       <div class="benefit-card card-6">
         <span>Launch Support</span>
-        <p>We help translate the identity into practical assets your team can use immediately.</p>
+        <p>We help bring your brand to life with ready-to-use assets your team can apply immediately.</p>
       </div>
 
       <div class="benefit-card card-4">
         <span>Digital Ready</span>
-        <p>Your brand assets are built to work smoothly on websites, social media, and campaigns.</p>
+        <p>Your brand is built to perform seamlessly across websites, social media, and digital campaigns.</p>
       </div>
 
       <div class="benefit-card card-2">
-        <span>Distinct Identity</span>
-        <p>Logos, colors, typography & systems designed to feel ownable across every touchpoint.</p>
+        <span>Proven Experience</span>
+        <p>With 15+ years of experience, we know what it takes to build brands that last and deliver results.</p>
       </div>
 
-      
     </div>
   </div>
 </section>
