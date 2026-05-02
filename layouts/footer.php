@@ -169,14 +169,236 @@
     <div id="mxd-cursor__image" class="mxd-cursor__image"></div>
 </div>
 
-   <!-- Load Scripts Start -->
-   <script src="js/libs.min.js"></script>
-   <script src="js/app.min.js"></script>
-   <script src="js/custom-stats.js"></script>
-   <script src="js/gsap-stats.js"></script>
-   <!-- Load Scripts End -->
+<!-- Load Scripts Start -->
+<script src="js/libs.min.js"></script>
+<script src="js/app.min.js"></script>
+<script src="js/custom-stats.js"></script>
+<script src="js/gsap-stats.js"></script>
+<!-- Load Scripts End -->
 
+<!-- Floating Social Media Button Start -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<div class="mxd-floating-social">
+
+    <button class="mxd-floating-social__toggle" id="mxdSocialToggle" aria-label="Toggle social media menu">
+        <i class="fas fa-share-alt mxd-floating-social__icon--share"></i>
+        <i class="fas fa-times mxd-floating-social__icon--close"></i>
+    </button>
+
+    <div class="mxd-floating-social__items">
+
+        <a href="#" class="mxd-floating-social__item facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#" class="mxd-floating-social__item instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#" class="mxd-floating-social__item linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="#" class="mxd-floating-social__item whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="#" class="mxd-floating-social__item twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<style>
+    .mxd-floating-social {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        z-index: 9999;
+    }
+
+    .mxd-floating-social__toggle {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .mxd-floating-social__toggle i {
+        position: absolute;
+        color: #fff;
+        font-size: 22px;
+        transition: all 0.3s ease;
+    }
+
+    .mxd-floating-social__icon--share {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+
+    .mxd-floating-social__icon--close {
+        opacity: 0;
+        transform: rotate(-180deg) scale(0);
+    }
+
+    .mxd-floating-social__toggle.active .mxd-floating-social__icon--share {
+        opacity: 0;
+        transform: rotate(180deg) scale(0);
+    }
+
+    .mxd-floating-social__toggle.active .mxd-floating-social__icon--close {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+
+    .mxd-floating-social__items {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 160px;
+        height: 160px;
+        pointer-events: none;
+    }
+
+    .mxd-floating-social__item {
+        position: absolute;
+        right: 3px;
+        bottom: 3px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translate(0, 0) scale(0);
+
+        transition:
+            transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+            opacity 0.2s ease,
+            visibility 0s linear 0.4s;
+    }
+
+    .mxd-floating-social__item i {
+        font-size: 20px;
+    }
+
+    .facebook {
+        background: #3b5998;
+    }
+
+    .instagram {
+        background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+
+    .linkedin {
+        background: #0077b5;
+    }
+
+    .mxd-floating-social__toggle.active~.mxd-floating-social__items {
+        pointer-events: auto;
+    }
+
+    .mxd-floating-social__toggle.active~.mxd-floating-social__items .mxd-floating-social__item {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition:
+            transform 0.45s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+            opacity 0.2s ease,
+            visibility 0s;
+    }
+
+    .facebook {
+        background: #3b5998;
+    }
+
+    .instagram {
+        background: #e1306c;
+    }
+
+    .linkedin {
+        background: #0077b5;
+    }
+
+    .whatsapp {
+        background: #25D366;
+    }
+
+    .twitter {
+        background: #1DA1F2;
+    }
+
+    .mxd-floating-social__toggle.active~.mxd-floating-social__items a:nth-child(1) {
+        opacity: 1;
+        transform: translate(-100px, 0) scale(1);
+    }
+
+    .mxd-floating-social__toggle.active~.mxd-floating-social__items a:nth-child(2) {
+        opacity: 1;
+        transform: translate(-85px, -45px) scale(1);
+    }
+
+    .mxd-floating-social__toggle.active~.mxd-floating-social__items a:nth-child(3) {
+        opacity: 1;
+        transform: translate(-60px, -85px) scale(1);
+    }
+
+    .mxd-floating-social__toggle.active~.mxd-floating-social__items a:nth-child(4) {
+        opacity: 1;
+        transform: translate(-25px, -105px) scale(1);
+    }
+
+    .mxd-floating-social__toggle.active~.mxd-floating-social__items a:nth-child(5) {
+        opacity: 1;
+        transform: translate(20px, -110px) scale(1);
+    }
+
+    .mxd-floating-social__item:hover {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+        .mxd-floating-social {
+            right: 20px;
+            bottom: 20px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const toggleBtn = document.getElementById("mxdSocialToggle");
+
+        toggleBtn.addEventListener("click", function(e) {
+            e.stopPropagation();
+            toggleBtn.classList.toggle("active");
+        });
+
+        document.addEventListener("click", function() {
+            toggleBtn.classList.remove("active");
+        });
+    });
+</script> -->
+
+<!-- Floating Social Media Button End -->
 </body>
+
 
 
 <!-- Mirrored from mixdesign.dev/themeforest/azurio/index-web-studio.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Apr 2026 05:03:07 GMT -->

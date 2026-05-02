@@ -45,6 +45,7 @@
   <link rel="stylesheet" type="text/css" href="css/plugins.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <!-- <link rel="stylesheet" href="css/media-query.css"> -->
   <!-- Template Styles End -->
 
   <!-- Custom Browser Color Start -->
